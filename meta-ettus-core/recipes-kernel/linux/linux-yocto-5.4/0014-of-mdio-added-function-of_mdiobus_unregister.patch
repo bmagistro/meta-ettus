@@ -52,9 +52,9 @@ index 3b67896d9d74..c2f8b6005bc0 100644
 +}
 +EXPORT_SYMBOL(of_mdiobus_unregister);
 +
- /* Helper function for of_phy_find_device */
- static int of_phy_match(struct device *dev, void *phy_np)
- {
+ /**
+  * of_phy_find_device - Give a PHY node, find the phy_device
+  * @phy_np: Pointer to the phy's device tree node
 diff --git a/include/linux/of_mdio.h b/include/linux/of_mdio.h
 index 99cefe6f5edb..ee60853a4ea8 100644
 --- a/include/linux/of_mdio.h

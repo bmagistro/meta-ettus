@@ -8,7 +8,7 @@ PV = "0.1.17-f1"
 S = "${WORKDIR}/mprpc-${ORIG_PV}"
 
 do_compile_prepend() {
-    cython3 mprpc/*.pyx
+    cython3 ${S}/mprpc/*.pyx
 }
 
 SRC_URI = " \

@@ -16,10 +16,10 @@ Signed-off-by: Moritz Fischer <mdf@kernel.org>
  include/linux/mfd/cros_ec.h           | 13 +++++++++
  4 files changed, 54 insertions(+)
 
-diff --git a/drivers/mfd/cros_ec.c b/drivers/mfd/cros_ec.c
+diff --git a/drivers/platform/chrome/cros_ec.c b/drivers/platform/chrome/cros_ec.c
 index 5d5c41ac3845..19266280dde0 100644
---- a/drivers/mfd/cros_ec.c
-+++ b/drivers/mfd/cros_ec.c
+--- a/drivers/platform/chrome/cros_ec.c
++++ b/drivers/platform/chrome/cros_ec.c
 @@ -3,6 +3,7 @@
   * ChromeOS EC multi-function device
   *
@@ -108,7 +108,7 @@ index 5ddca44be06d..bc69e48901bb 100644
   */
  
  #ifndef __LINUX_MFD_CROS_EC_H
-@@ -322,4 +323,16 @@ int cros_ec_get_next_event(struct cros_ec_device *ec_dev, bool *wake_event);
+@@ -34,4 +35,16 @@ int cros_ec_get_next_event(struct cros_ec_device *ec_dev, bool *wake_event);
   */
  u32 cros_ec_get_host_event(struct cros_ec_device *ec_dev);
  

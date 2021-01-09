@@ -13,7 +13,7 @@ UBOOT_LOADADDRESS_ni-e31x = "0000000"
 UBOOT_BINARY_ni-e31x = "u-boot.${UBOOT_SUFFIX}"
 SPL_BINARY_ni-e31x = "spl/boot.bin"
 
-PREFERRED_VERSION_u-boot = "2019.07"
+PREFERRED_VERSION_u-boot = "2020.01"
 
 IMAGE_BOOT_FILES ?= "boot.bin ${UBOOT_BINARY}"
 
@@ -21,7 +21,7 @@ KERNEL_CLASSES += "kernel-fitimage"
 KERNEL_IMAGETYPE = "fitImage"
 KERNEL_DEFCONFIG ?= "multi_v7_defconfig"
 
-PREFERRED_VERSION_linux-yocto = "5.2.%"
+PREFERRED_VERSION_linux-yocto = "5.4.%"
 
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = " \
                              kernel-image \

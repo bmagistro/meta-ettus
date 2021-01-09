@@ -3,7 +3,7 @@ SECTION = "devel/python"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://PKG-INFO;md5=3d78c5bb15ac641d34f2ddc3bd7f51fa"
 HOMEPAGE = "http://code.google.com/p/pythonfutures"
-DEPENDS = "python"
+DEPENDS = "python3"
 
 SRC_URI = "https://pypi.python.org/packages/source/f/futures/futures-${PV}.tar.gz"
 SRC_URI[md5sum] = "ced2c365e518242512d7a398b515ff95"
